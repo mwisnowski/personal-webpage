@@ -1,0 +1,99 @@
+/* Universal styles*/
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  overflow-x: hidden;
+  font-size: 16px
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #EDC7b7;
+
+}
+
+strong {
+  font-weight: bold;
+}
+
+main {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+}
+h2 {
+  font-size: 48px;
+  font-size: bold;
+  margin: 24px;
+  word-spacing: .0125em;
+  line-height: 1.25em;
+  color: white;
+}
+
+h3 {
+  font-size: 32;
+}
+
+h4{
+  font-size: 24px;
+  line-height: 36px;
+  margin: 24px;
+  color: rgba(0,0,0,0.7)
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+.banner {
+  display: inline-block;
+  top: 80px;
+  left: 32px;
+  height: auto;
+  align-items: center;
+  width: auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  position: relative;
+  line-height: .5;
+  font-family: 'Permanent Marker', cursive;
+  text-transform: uppercase;
+  color: #ac3b61;
+}
+
+object {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+object h3 {
+  font-size: 32px;
+  color: rgba(0,0,0.8);
+  text-align: center;
+}
+
+object p {
+  font-size: 24px;
+  text-align: center;
+}
+
+.pdf {
+  width: 60%;
+  height:  60%;
+}
+
+.video {
+  width: 40%;
+  height: calc(40vw/1.7778);
+}

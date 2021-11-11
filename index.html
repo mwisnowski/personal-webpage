@@ -1,45 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head><link href="./resources/css/index.css" type="text/css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <title>Matt Wisnowski</title>
-  </head>
-  <body>
+<head>
+  <meta name="author" content="Matt Wisnowski">
+  <link href="resources/css/universal.css" type="text/css" rel="stylesheet">
+  <link href="resources/css/header.css" type="text/css" rel="stylesheet">
+  <link href="resources/css/media.css" type="text/css" rel="stylesheet">
+  <link href="resources/css/main.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Matt Wisnowski</title>
+</head>
+<body>
 
-    <!-- Header -->
-    <nav class="header">
-      <span class="name">Matt Wisnowski</span>
-      <ul>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Work Experience</a></li>
-        <li><a href="#">My Gear</a></li>
-      </ul>
-    </nav>
+  <!-- Header -->
+  <header>
 
-  <!-- banner -->
-
-  <div class="banner">
-    <!-- i need to come up with a banner at some point i feel -->
-  </div>
-
-  <!-- About Me -->
-  <div class="aboutme">
-    <div class="photo">
-      <div class="image-container">
-        <img src="./resources/images/headshot.jpeg">
+    <!-- Desktop Header -->
+    <div class="desktop-header">
+      <div class="name">
+            <strong>Matt Wisnowski</strong>
       </div>
+      <nav role="navigation">
+        <ul role="presentation">
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="music.html">My Music and Gear</a></li>
+          <li><a href="homebrew.html">My 5E Homebrew</a></li>
+          <!--<li><a href="gear.html">My Gear</a></li>-->
+          <!--<li><a href="#">My Work Experience</a></li>-->
+        </ul>
+      </nav>
     </div>
-    <p>
-      <span class="first-letter">Hi!</span> I'm Matt Wisnowski, I'm currently learing to code using <a href="https://www.codecademy.com/">Codecademy</a>! A few things about me:</p>
-    <ul>
-      <br>
-      <li>I'm very technical</li>
-      <li>I like to play music and have even released a few covers</li>
-      <li>I like to play video games</li>
-    </ul>
-    <p>Feel free to check out my YouTube channel: <a href="https://www.youtube.com/channel/UC2gWzTVAgE5qJnBR_kNBXog">StyrofoamShotgun</a></p>
+    <!--Mobile  Header -->
+    <div class="mobile-header">
+      <nav role="mobile-navigation">
+        <ul role="mobile-presentation">
+          <li><a href="index.html"><strong>Matt Wisnowski</strong></a>
+          <!--<li><a href="#">About Me</a></li>
+          <li><a href="#">Work Experience</a></li>
+          <li><a href="#">My Music</a></li>-->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<!-- banner -->
+
+  <div class="banner" id="banner1">
+    <h1><strong>About me</strong></h1>
   </div>
-  </body>
+
+<!-- Main Content -->
+  <main>
+<!-- About Me -->
+    <div class="main">
+
+      <img class="headshot" alt="Me" src="resources/images/headshot.jpeg"/>
+      <div class="content">
+        <h2><!--<span class="first-letter">-->Hi!<!--</span>--> I'm Matt Wisnowski, I'm currently learning to code and design webpages using <a href="https://www.codecademy.com/" target="_blank">Codecademy</a>! A few things about me:</h2>
+          <ul>
+            <li>I like to learn about new technology</li>
+            <li>I like to play music and have even released a few covers</li>
+            <li>I like to play video games</li>
+            <li>I like to play tabletop games and have made some personal homebrew content for DnD 5th Edition</li>
+            <li>I like to play board games and have a huge collection</li>
+          </ul>
+        <h2>Feel free to check out my YouTube channel: <a href="https://www.youtube.com/channel/UC2gWzTVAgE5qJnBR_kNBXog" target="_blank">StyrofoamShotgun</a> where I post my covers.</h2>
+      </div>
+  </div>
+
+</main>
+</body>
 </html>

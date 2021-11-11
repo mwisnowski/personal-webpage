@@ -1,0 +1,37 @@
+/*mobile (generalized)*/
+@media only screen
+  and (min-device-width:300px)
+  and (max-device-width:800px)
+  and (-webkit-max-device-pixel-ratio:4) {
+
+}
+
+/*tablet (generalized)*/
+@media only screen
+  and (min-device-width:600px)
+  and (max-device-width:1080px)
+  and (-webkit-max-device-pixel-ratio:2) {
+
+}
+
+/*smartwatch*/
+@media
+  (max-device-width: 218px)
+  and (max-device-height: 281px) {
+
+}
+
+/*Non-Retina Screens*/
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* Retina Screens*/
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+}

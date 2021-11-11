@@ -46,7 +46,7 @@ body {
   padding-right: 2.22rem;
 }
 .header li a {
-  text-decoration: none;
+  /*text-decoration: none;*/
   color: #4a4a4a;
   font-size: 1.4rem;
 }

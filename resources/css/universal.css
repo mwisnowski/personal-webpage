@@ -10,12 +10,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   background: #EDC7b7;
-  /* Old browsers */
-  background: -moz-linear-gradient(45deg, #45deg, #EDC7b7 0%, #eee2dc 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #EDC7b7 0%, #eee2dc 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #EDC7b7 0%, #eee2dc 100%);
+
 }
 
 strong {
@@ -41,8 +36,7 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
-  color: rgba(0,0,0.8);
+  font-size: 32;
 }
 
 h4{
@@ -75,4 +69,31 @@ h6 {
   font-family: 'Permanent Marker', cursive;
   text-transform: uppercase;
   color: #ac3b61;
+}
+
+object {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+object h3 {
+  font-size: 32px;
+  color: rgba(0,0,0.8);
+  text-align: center;
+}
+
+object p {
+  font-size: 24px;
+  text-align: center;
+}
+
+.pdf {
+  width: 60%;
+  height:  60%;
+}
+
+.video {
+  width: 40%;
+  height: calc(40vw/1.7778);
 }

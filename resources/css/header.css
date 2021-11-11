@@ -16,7 +16,6 @@ header {
   height: 32px;
   line-height: 32px;
   text-decoration: none;
-  font-size: 32px;
   font-family: 'Permanent Marker', cursive;
   flex-grow: 1;
   /*color: #AC3B61;*/
@@ -65,7 +64,8 @@ header span {
 }
 
 header strong {
-  color: 	rgba(172, 59, 97, .8);
+  color: 	rgba(172, 59, 97, 1.2);
+  font-size: 32px;
 }
 
 @media only screen and (min-width:801px) {

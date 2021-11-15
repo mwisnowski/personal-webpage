@@ -1,69 +1,163 @@
-// Create array of artists (14 options total)
-const punkArtist = [
-  'Green Day',
-  'We Are the Union',
-  'The Offspring',
-  'Catbite',
-  'Travis Barker (of The Aquabats)',
-  'Beach Bunny',
-  'VIAL',
-  'Avril Lavigne',
-  'Kill Lincoln',
-  'Sum 41',
-  'Goldfinger',
-  'Millencolin',
-  'Meet Me @ the Altar',
-  'Paramore'
+// Create array of genres (12 options total)
+const songGenre = [
+  'Rock',
+  'Pop',
+  'Metal',
+  'Jazz',
+  'Punk',
+  'Electronic',
+  'Country',
+  'Blues',
+  'Hip Hop',
+  'R&B',
+  'Folk'
 ];
-// test punkArtist array list
-//console.log(punkArtist.join('\n'));
+
+// Create array of keys (12 options total)
+const songKey = [
+  'Ab',
+  'A',
+  'A#',
+  'Bb',
+  'B',
+  'C',
+  'C#',
+  'Db',
+  'D',
+  'D#',
+  'Eb',
+  'E',
+  'F',
+  'F#',
+  'Gb',
+  'G',
+  'G#'
+];
+// test songKey array list
+//console.log(songKey.join('\n'));
 
 // create array of totally true and not at all fictitious facts (17 choices)
-const facts = [
-  'has been active since',
-  'has been inactive since',
-  'released a ska song in',
-  'released a noise EP in',
-  'released a post-hardcore, midwest-emo, farmer concept album in',
-  'was headliner for Vans Warped Tour in',
-  'was banned from Warped Tour in',
-  'formed after playing Tony Hawk\'s Pro Skater in',
-  'released their first single in',
-  'won the Nickelodeon Kids\' Choice Award for Favorite Music Group in',
-  'has been a guest artist on every Pop Punk single since',
-  'released their most well-known song in',
-  'sold out in',
-  'sold their own bootleg merch until',
-  'hasn\'t been allowed to perform in Seattle since',
-  'performed on Saturday Night Live in',
-  'didn\'t know they had a bassist until',
+const majorMinor = [
+  '',
+  ' minor'
 ];
 
-// test facts array list
-//console.log(facts.join('\n'));
+// test major/minor array list
+//console.log(majorMinor.join('\n'));
 
-// create of years from 1984 - 2021 (37 total)
-const year = [];
+//create array of music modes
 
-for (var i = 1984; i <= 2021; i++) {
-   year.push(i);
+const chordArray = [
+  'II',
+  'ii',
+  'III',
+  'iii',
+  'IV',
+  'iv',
+  'V',
+  'v',
+  'VI',
+  'vi',
+  'VII',
+  'vii'
+];
+
+// test mode array list
+// console.log(chordArray.join('\n'));
+
+//decide if seventh chord
+const isSeven = [
+  '',
+  '7'
+];
+
+// test seven chord
+//console.log(sevenChordArray.join('\n'));
+
+
+// create array of tempos between 90 and 180 at increments of 3
+const tempo = [];
+
+for (var i = 90; i <= 180; i += 3) {
+   tempo.push(i);
 };
+
+const timeFlux = [
+  'Let\'s make this one standard time',
+  'Let\'s speed things up and give it a double time feel!',
+  'Let\'s slow it down and give it a double time feel.'
+]
+
 // test year array function
-//console.log(year.join('\n'));
+//console.log(tempo.join('\n'));
 
 // actual function start
 
-function funFact() {
+function makeAnRNGSong() {
   //create random number from input array
   function rng(array) {
     return Math.floor(Math.random() * array.length);
   };
   //setup rng indexes
-  let artist = punkArtist[rng(punkArtist)];
-  let fact = facts[rng(facts)];
-  let when = year[rng(year)];
+  let genre = songGenre[rng(songGenre)];
+  let key = songKey[rng(songKey)];
+  let majMin = majorMinor[rng(majorMinor)];
+  let chordOne = [];
+    if (majMin === ' minor') {
+      chordOne.push('i');
+    } else {
+      chordOne.push('I');
+    };
+  let chordTwo = [chordArray[rng(chordArray)]];
+  /*let chordTwo = [] {
+    let chordOne = [];
+      if (majMin === 'minor') {
+        chordOne.push('i');
+      } else {
+        chordOne.push('I');
+      };
+      if
+  }*/
+  let chordThree = [chordArray[rng(chordArray)]];
+  let chordFour = [chordArray[rng(chordArray)]];
+
+  //check to try and make no two chords the same
+  if (chordTwo.toLowerCase != chordThree.toLowerCase) {
+    return
+  } else {
+    chordTwo = [];
+    chordTwo.push(chordArray[rng(chordArray)]);
+  };
+  if (chordTwo.toLowerCase != chordFour.toLowerCase) {
+    return
+  } else {
+    chordTwo = [];
+    chordTwo.push(chordArray[rng(chordArray)]);
+  };
+  if (chordThree.toLowerCase != chordFour.toLowerCase) {
+    return
+  } else {
+    chordThree = [];
+    chordThree.push(chordArray[rng(chordArray)]);
+  }
+  if (chordFour.toLowerCase != chordTwo.toLowerCase) {
+    return
+  } else {
+    chordFour = [];
+    chordFour.push(chordArray[rng(chordArray)]);
+  }
+
+  let seven = isSeven[rng(isSeven)];
+  let speed = tempo[rng(tempo)];
+  let timeFluct = timeFlux[rng(timeFlux)];
 
   //put the final string together
-  let factString = `${artist} ${fact} ${when}`;
-  alert (`${factString}!`);
+  let makeASong = `Let's make a ${genre} song in the key of ${key}${majMin}, with a tempo of ${speed} BPM.\n`
+  + `We'll use the the following chords:\n`
+  + `${chordOne}\n`
+  + `${chordTwo}\n`
+  + `${chordThree}${seven}\n`
+  + `${chordFour}\n`
+  + `${timeFluct}`;
+  alert (`${makeASong}`);
 };
